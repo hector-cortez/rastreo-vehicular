@@ -11,6 +11,7 @@ import { PosicionActualComponent } from './posicion-actual/posicion-actual.compo
 import { RecorridoComponent } from './recorrido/recorrido.component';
 import { TrazadoRecorridoComponent } from './trazado-recorrido/trazado-recorrido.component';
 import { ExcesoVelocidadComponent } from './exceso-velocidad/exceso-velocidad.component';
+import { ParadasComponent } from './paradas/paradas.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ExcesoVelocidadComponent } from './exceso-velocidad/exceso-velocidad.co
     PosicionActualComponent,
     RecorridoComponent,
     TrazadoRecorridoComponent,
-    ExcesoVelocidadComponent
+    ExcesoVelocidadComponent,
+    ParadasComponent
   ],
   imports: [
     BrowserModule,
