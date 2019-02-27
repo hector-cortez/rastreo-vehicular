@@ -12,6 +12,7 @@ import { RecorridoComponent } from './recorrido/recorrido.component';
 import { TrazadoRecorridoComponent } from './trazado-recorrido/trazado-recorrido.component';
 import { ExcesoVelocidadComponent } from './exceso-velocidad/exceso-velocidad.component';
 import { ParadasComponent } from './paradas/paradas.component';
+import { EventosComponent } from './eventos/eventos.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ParadasComponent } from './paradas/paradas.component';
     RecorridoComponent,
     TrazadoRecorridoComponent,
     ExcesoVelocidadComponent,
-    ParadasComponent
+    ParadasComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule,
