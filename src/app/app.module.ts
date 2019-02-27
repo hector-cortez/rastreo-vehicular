@@ -10,6 +10,7 @@ import { ReportesComponent } from './reportes/reportes.component';
 import { PosicionActualComponent } from './posicion-actual/posicion-actual.component';
 import { RecorridoComponent } from './recorrido/recorrido.component';
 import { TrazadoRecorridoComponent } from './trazado-recorrido/trazado-recorrido.component';
+import { ExcesoVelocidadComponent } from './exceso-velocidad/exceso-velocidad.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TrazadoRecorridoComponent } from './trazado-recorrido/trazado-recorrido
     ReportesComponent,
     PosicionActualComponent,
     RecorridoComponent,
-    TrazadoRecorridoComponent
+    TrazadoRecorridoComponent,
+    ExcesoVelocidadComponent
   ],
   imports: [
     BrowserModule,
