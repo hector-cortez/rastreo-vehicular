@@ -8,6 +8,7 @@ import { PrincipalComponent } from './principal/principal.component';
 import { MonitoreoComponent } from './monitoreo/monitoreo.component';
 import { ReportesComponent } from './reportes/reportes.component';
 import { PosicionActualComponent } from './posicion-actual/posicion-actual.component';
+import { RecorridoComponent } from './recorrido/recorrido.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PosicionActualComponent } from './posicion-actual/posicion-actual.compo
     PrincipalComponent,
     MonitoreoComponent,
     ReportesComponent,
-    PosicionActualComponent
+    PosicionActualComponent,
+    RecorridoComponent
   ],
   imports: [
     BrowserModule,
