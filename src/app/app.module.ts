@@ -9,6 +9,7 @@ import { MonitoreoComponent } from './monitoreo/monitoreo.component';
 import { ReportesComponent } from './reportes/reportes.component';
 import { PosicionActualComponent } from './posicion-actual/posicion-actual.component';
 import { RecorridoComponent } from './recorrido/recorrido.component';
+import { TrazadoRecorridoComponent } from './trazado-recorrido/trazado-recorrido.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RecorridoComponent } from './recorrido/recorrido.component';
     MonitoreoComponent,
     ReportesComponent,
     PosicionActualComponent,
-    RecorridoComponent
+    RecorridoComponent,
+    TrazadoRecorridoComponent
   ],
   imports: [
     BrowserModule,
