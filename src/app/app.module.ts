@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { MonitoreoComponent } from './monitoreo/monitoreo.component';
 import { ReportesComponent } from './reportes/reportes.component';
