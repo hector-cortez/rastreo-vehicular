@@ -3,10 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { PosicionActualComponent } from './components/posicion-actual/posicion-actual.component';
+import { RecorridoComponent } from './components/recorrido/recorrido.component';
+import { TrazadoRecorridoComponent } from './components/trazado-recorrido/trazado-recorrido.component';
+import { ExcesoVelocidadComponent } from './components/exceso-velocidad/exceso-velocidad.component';
+import { ParadasComponent } from './components/paradas/paradas.component';
+import { EventosComponent } from './components/eventos/eventos.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'PosicionActual', component: PosicionActualComponent },
+  { path: 'posicion-actual', component: PosicionActualComponent },
+  { path: 'recorrido', component: RecorridoComponent },
+  { path: 'trazado-recorrido', component: TrazadoRecorridoComponent },
+  { path: 'exceso-velocidad', component: ExcesoVelocidadComponent },
+  { path: 'paradas', component: ParadasComponent },
+  { path: 'eventos', component: EventosComponent },
 ];
 
 @NgModule({
