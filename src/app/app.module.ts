@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -13,6 +14,11 @@ import { TrazadoRecorridoComponent } from './components/trazado-recorrido/trazad
 import { ExcesoVelocidadComponent } from './components/exceso-velocidad/exceso-velocidad.component';
 import { ParadasComponent } from './components/paradas/paradas.component';
 import { EventosComponent } from './components/eventos/eventos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuNavComponent } from './menu-nav/menu-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,11 +32,21 @@ import { EventosComponent } from './components/eventos/eventos.component';
     TrazadoRecorridoComponent,
     ExcesoVelocidadComponent,
     ParadasComponent,
-    EventosComponent
+    EventosComponent,
+    MenuNavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    // RouterModule.forRoot(routes),
+    RouterModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
