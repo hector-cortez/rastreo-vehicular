@@ -17,7 +17,11 @@ import { EventosComponent } from './components/eventos/eventos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuNavComponent } from './menu-nav/menu-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,  } from '@angular/material';
+import { MatCardModule } from '@angular/material/card'; 
+import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -33,7 +37,8 @@ import { RouterModule } from '@angular/router';
     ExcesoVelocidadComponent,
     ParadasComponent,
     EventosComponent,
-    MenuNavComponent
+    MenuNavComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,10 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatInputModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
