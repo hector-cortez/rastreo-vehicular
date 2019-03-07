@@ -3,18 +3,33 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
-    <mat-toolbar>Menu</mat-toolbar>
+      
+    <mat-toolbar>
+        <mat-toolbar-row><h2>Menu</h2></mat-toolbar-row>
+    </mat-toolbar>
     <mat-nav-list>
       <!-- Monitoreo --->
-      <span><b>Monitoreo</b></span>
-      <a mat-list-item href="posicion-actual">Posición Actual</a>
-      <a mat-list-item href="recorrido">Recorrido</a>
-      <a mat-list-item href="trazado-recorrido">Trazado Recorrido</a>
+      <h2 matSubheader> Monitoreo </h2>
+      <a mat-list-item href="posicion-actual">
+        <i class="material-icons">person_pin_circle</i>&nbsp;  Posición Actual
+      </a>
+      <a mat-list-item href="recorrido">
+          <i class="material-icons">directions_run</i> &nbsp; Recorrido
+      </a>
+      <a mat-list-item href="trazado-recorrido">
+          <i class="material-icons">timeline</i> &nbsp; Trazado Recorrido
+      </a>
       <!-- Reportes --->
-      <span><b>Reportes</b></span>
-      <a mat-list-item href="exceso-velocidad">Exceso de Velocidad</a>
-      <a mat-list-item href="paradas">Paradas</a>
-      <a mat-list-item href="eventos">Eventos</a>
+      <h2 matSubheader> Reportes </h2>
+      <a mat-list-item href="exceso-velocidad">
+        <i class="material-icons">local_shipping</i> &nbsp; Exceso de Velocidad
+      </a>
+      <a mat-list-item href="paradas">
+        <i class="material-icons">directions_bus</i> &nbsp; Paradas
+      </a>
+      <a mat-list-item href="eventos">
+        <i class="material-icons">image_search</i> &nbsp; Eventos
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
