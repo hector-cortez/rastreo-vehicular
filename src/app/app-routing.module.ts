@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
+import { MenuNavComponent } from './menu-nav/menu-nav.component';
 import { PosicionActualComponent } from './components/posicion-actual/posicion-actual.component';
 import { RecorridoComponent } from './components/recorrido/recorrido.component';
 import { TrazadoRecorridoComponent } from './components/trazado-recorrido/trazado-recorrido.component';
@@ -11,6 +12,7 @@ import { EventosComponent } from './components/eventos/eventos.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: 'menu-nav',  component: MenuNavComponent },
   { path: 'posicion-actual', component: PosicionActualComponent },
   { path: 'recorrido', component: RecorridoComponent },
   { path: 'trazado-recorrido', component: TrazadoRecorridoComponent },
