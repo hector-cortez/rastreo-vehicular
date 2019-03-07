@@ -20,9 +20,10 @@ export class LoginComponent implements OnInit {
 
   login() : void {
     if(this.username == 'admin' && this.password == 'admin'){
-      this.router.navigate(["menu-nav"]);
+     this.router.navigate(["/"]);
     }else {
-      alert("Credenciales no validas.");
+      alert("Invalid credentials");
+      this.router.navigate(["/"]);
     }
   }
 

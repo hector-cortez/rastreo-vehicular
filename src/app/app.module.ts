@@ -22,6 +22,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { MatCardModule } from '@angular/material/card'; 
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
 
 import { RouterModule } from '@angular/router';
 
@@ -56,7 +57,8 @@ import { RouterModule } from '@angular/router';
     MatListModule,
     MatCardModule,
     MatInputModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
