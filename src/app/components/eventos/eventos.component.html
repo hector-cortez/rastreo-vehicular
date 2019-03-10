@@ -1,3 +1,55 @@
-<p>
-  eventos works!
-</p>
+<h3 align="center">
+  Reporte de Eventos
+</h3>
+
+<mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar">
+</mat-form-field>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!-- Nro Column -->
+  <ng-container matColumnDef="nro">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.nro}} </td>
+  </ng-container>
+
+  <!-- Placa Column -->
+  <ng-container matColumnDef="placa">
+    <th mat-header-cell *matHeaderCellDef> Placa </th>
+    <td mat-cell *matCellDef="let element"> {{element.placa}} </td>
+  </ng-container>
+  
+  <!-- Alias Column -->
+  <ng-container matColumnDef="alias">
+    <th mat-header-cell *matHeaderCellDef> Alias </th>
+    <td mat-cell *matCellDef="let element"> {{element.alias}} </td>
+  </ng-container>
+
+  <!-- Ultimo Registro Column -->
+  <ng-container matColumnDef="ultimoRegistro">
+    <th mat-header-cell *matHeaderCellDef> Ultimo Registro </th>
+    <td mat-cell *matCellDef="let element"> {{element.ultimoRegistro}} </td>
+  </ng-container>
+
+  <!-- Velocidad Column -->
+  <ng-container matColumnDef="velocidad">
+    <th mat-header-cell *matHeaderCellDef> Velocidad </th>
+    <td mat-cell *matCellDef="let element"> {{element.velocidad}} </td>
+  </ng-container>
+
+  <!-- Punto Cercano Column -->
+  <ng-container matColumnDef="puntoCercano">
+    <th mat-header-cell *matHeaderCellDef> Punto Cercano </th>
+    <td mat-cell *matCellDef="let element"> {{element.puntoCercano}} </td>
+  </ng-container>
+
+  <!-- Modem Column -->
+  <ng-container matColumnDef="modem">
+    <th mat-header-cell *matHeaderCellDef> Modem </th>
+    <td mat-cell *matCellDef="let element"> {{element.modem}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
