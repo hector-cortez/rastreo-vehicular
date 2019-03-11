@@ -15,6 +15,11 @@ import { TrazadoRecorridoComponent } from './components/trazado-recorrido/trazad
 import { ExcesoVelocidadComponent } from './components/exceso-velocidad/exceso-velocidad.component';
 import { ParadasComponent } from './components/paradas/paradas.component';
 import { EventosComponent } from './components/eventos/eventos.component';
+import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorrido-mostrar.component';
+import { ExcesoVelocidadReporteComponent } from './components/exceso-velocidad-reporte/exceso-velocidad-reporte.component';
+import { ParadasReporteComponent } from './components/paradas-reporte/paradas-reporte.component';
+import { EventosReporteComponent } from './components/eventos-reporte/eventos-reporte.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuNavComponent } from './menu-nav/menu-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -28,7 +33,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
 
 import { RouterModule } from '@angular/router';
-import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorrido-mostrar.component';
+
 
 @NgModule({
   declarations: [
@@ -45,6 +50,9 @@ import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorr
     EventosComponent,
     MenuNavComponent,
     RecorridoMostrarComponent,
+    ExcesoVelocidadReporteComponent,
+    ParadasReporteComponent,
+    EventosReporteComponent,
 
   ],
   imports: [
