@@ -23,8 +23,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
+import { MatSelectModule } from '@angular/material/select';
 
 import { RouterModule } from '@angular/router';
+import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorrido-mostrar.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { RouterModule } from '@angular/router';
     ParadasComponent,
     EventosComponent,
     MenuNavComponent,
+    RecorridoMostrarComponent,
 
   ],
   imports: [
@@ -58,7 +61,8 @@ import { RouterModule } from '@angular/router';
     MatCardModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
