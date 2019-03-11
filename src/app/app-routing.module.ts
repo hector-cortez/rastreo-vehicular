@@ -9,12 +9,14 @@ import { TrazadoRecorridoComponent } from './components/trazado-recorrido/trazad
 import { ExcesoVelocidadComponent } from './components/exceso-velocidad/exceso-velocidad.component';
 import { ParadasComponent } from './components/paradas/paradas.component';
 import { EventosComponent } from './components/eventos/eventos.component';
+import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorrido-mostrar.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'menu-nav',  component: MenuNavComponent },
   { path: 'posicion-actual', component: PosicionActualComponent },
   { path: 'recorrido', component: RecorridoComponent },
+  { path: 'recorrido-mostrar', component: RecorridoMostrarComponent },
   { path: 'trazado-recorrido', component: TrazadoRecorridoComponent },
   { path: 'exceso-velocidad', component: ExcesoVelocidadComponent },
   { path: 'paradas', component: ParadasComponent },

@@ -24,6 +24,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material';
 
 import { RouterModule } from '@angular/router';
 import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorrido-mostrar.component';
@@ -62,9 +64,14 @@ import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorr
     MatInputModule,
     MatProgressSpinnerModule,
     MatTableModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+
   ],
-  providers: [],
+  providers: [
+    MatDatepickerModule, 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
