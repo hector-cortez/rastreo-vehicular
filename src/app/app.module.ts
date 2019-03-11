@@ -33,6 +33,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
 
 import { RouterModule } from '@angular/router';
+import { PosicionActualMostrarComponent } from './components/posicion-actual-mostrar/posicion-actual-mostrar.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { RouterModule } from '@angular/router';
     ExcesoVelocidadReporteComponent,
     ParadasReporteComponent,
     EventosReporteComponent,
+    PosicionActualMostrarComponent,
 
   ],
   imports: [

@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { MenuNavComponent } from './menu-nav/menu-nav.component';
 import { PosicionActualComponent } from './components/posicion-actual/posicion-actual.component';
+import { PosicionActualMostrarComponent } from './components/posicion-actual-mostrar/posicion-actual-mostrar.component';
 import { RecorridoComponent } from './components/recorrido/recorrido.component';
 import { TrazadoRecorridoComponent } from './components/trazado-recorrido/trazado-recorrido.component';
 import { ExcesoVelocidadComponent } from './components/exceso-velocidad/exceso-velocidad.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'menu-nav',  component: MenuNavComponent },
   { path: 'posicion-actual', component: PosicionActualComponent },
+  { path: 'posicion-actual-mostrar', component: PosicionActualMostrarComponent },
   { path: 'recorrido', component: RecorridoComponent },
   { path: 'recorrido-mostrar', component: RecorridoMostrarComponent },
   { path: 'trazado-recorrido', component: TrazadoRecorridoComponent },
