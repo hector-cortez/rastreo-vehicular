@@ -7,7 +7,6 @@ export interface Vehiculo {
   viewValue: string;
 }
 
-
 @Component({
   selector: 'app-exceso-velocidad',
   templateUrl: './exceso-velocidad.component.html',

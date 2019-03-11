@@ -7,10 +7,12 @@ import { PosicionActualComponent } from './components/posicion-actual/posicion-a
 import { RecorridoComponent } from './components/recorrido/recorrido.component';
 import { TrazadoRecorridoComponent } from './components/trazado-recorrido/trazado-recorrido.component';
 import { ExcesoVelocidadComponent } from './components/exceso-velocidad/exceso-velocidad.component';
-import { ParadasComponent } from './components/paradas/paradas.component';
-import { EventosComponent } from './components/eventos/eventos.component';
-import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorrido-mostrar.component';
 import { ExcesoVelocidadReporteComponent } from './components/exceso-velocidad-reporte/exceso-velocidad-reporte.component';
+import { ParadasComponent } from './components/paradas/paradas.component';
+import { ParadasReporteComponent } from './components/paradas-reporte/paradas-reporte.component';
+import { EventosComponent } from './components/eventos/eventos.component';
+import { EventosReporteComponent } from './components/eventos-reporte/eventos-reporte.component';
+import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorrido-mostrar.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -22,7 +24,9 @@ const routes: Routes = [
   { path: 'exceso-velocidad', component: ExcesoVelocidadComponent },
   { path: 'exceso-velocidad-reporte', component: ExcesoVelocidadReporteComponent },
   { path: 'paradas', component: ParadasComponent },
+  { path: 'paradas-reporte', component: ParadasReporteComponent},  
   { path: 'eventos', component: EventosComponent },
+  { path: 'eventos-reporte', component: EventosReporteComponent },  
 ];
 
 @NgModule({
