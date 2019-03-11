@@ -1,5 +1,5 @@
 <h3 align="center">
-  Exceso de Velocidad
+  Vehículos con Exceso de Velocidad Mayores a 60 Km/h.
 </h3>
 
 <mat-form-field>
@@ -28,13 +28,13 @@
 
   <!-- Ultimo Registro Column -->
   <ng-container matColumnDef="ultimoRegistro">
-    <th mat-header-cell *matHeaderCellDef> Ultimo Registro </th>
+    <th mat-header-cell *matHeaderCellDef> Fecha/Hora </th>
     <td mat-cell *matCellDef="let element"> {{element.ultimoRegistro}} </td>
   </ng-container>
 
   <!-- Velocidad Column -->
   <ng-container matColumnDef="velocidad">
-    <th mat-header-cell *matHeaderCellDef> Velocidad </th>
+    <th mat-header-cell *matHeaderCellDef> Velocidad Excedida </th>
     <td mat-cell *matCellDef="let element"> {{element.velocidad}} </td>
   </ng-container>
 

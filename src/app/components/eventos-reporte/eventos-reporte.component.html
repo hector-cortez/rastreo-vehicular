@@ -1,6 +1,12 @@
-<h3 align="center">
-  Reporte de Eventos
-</h3>
+<mat-card>
+  <h3 align="center">
+    Reporte de Eventos
+  </h3>
+  <b>Vehiculo Placa:</b> &nbsp;&nbsp; <span>1736-XEG</span>
+  <br>
+  <b>Fecha Desde:</b>&nbsp;&nbsp;<span>2019-03-05</span> &nbsp;&nbsp;&nbsp;&nbsp; <b>Fecha Hasta:</b>&nbsp;&nbsp;<span>2019-03-05</span>
+</mat-card>
+  
 
 <mat-form-field>
   <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar">
@@ -36,6 +42,12 @@
   <ng-container matColumnDef="velocidad">
     <th mat-header-cell *matHeaderCellDef> Velocidad </th>
     <td mat-cell *matCellDef="let element"> {{element.velocidad}} </td>
+  </ng-container>
+
+  <!-- Evento Column -->
+  <ng-container matColumnDef="evento">
+    <th mat-header-cell *matHeaderCellDef> Evento </th>
+    <td mat-cell *matCellDef="let element"> {{element.evento}} </td>
   </ng-container>
 
   <!-- Punto Cercano Column -->

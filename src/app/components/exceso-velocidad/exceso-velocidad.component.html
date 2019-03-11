@@ -1,7 +1,7 @@
 <h3 align="center">
   Exceso de Velocidad
 </h3>
-
+<!--
 <mat-form-field>
   <mat-select placeholder="Vehiculo">
     <mat-option *ngFor="let vehiculo of vehiculos" [value]="vehiculo.value">
@@ -9,6 +9,15 @@
     </mat-option>
   </mat-select>
 </mat-form-field>
+
+-->
+
+<br>
+<span>Velocidad Mayor o Igual a: </span> &nbsp;&nbsp;&nbsp;&nbsp;
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Km/hora" value="60" type="number" >
+</mat-form-field>
+
 <br>
 <mat-form-field>
   <input matInput [matDatepicker]="fDesde" placeholder="Fecha Desde">
