@@ -10,6 +10,7 @@ import { ExcesoVelocidadComponent } from './components/exceso-velocidad/exceso-v
 import { ParadasComponent } from './components/paradas/paradas.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { RecorridoMostrarComponent } from './components/recorrido-mostrar/recorrido-mostrar.component';
+import { ExcesoVelocidadReporteComponent } from './components/exceso-velocidad-reporte/exceso-velocidad-reporte.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'recorrido-mostrar', component: RecorridoMostrarComponent },
   { path: 'trazado-recorrido', component: TrazadoRecorridoComponent },
   { path: 'exceso-velocidad', component: ExcesoVelocidadComponent },
+  { path: 'exceso-velocidad-reporte', component: ExcesoVelocidadReporteComponent },
   { path: 'paradas', component: ParadasComponent },
   { path: 'eventos', component: EventosComponent },
 ];
