@@ -3,7 +3,7 @@
 </h3>
 
 <mat-form-field>
-  <mat-select placeholder="Vehiculo">
+  <mat-select [(value)]="selVehiculo" placeholder="Vehiculo">
     <mat-option *ngFor="let vehiculo of vehiculos" [value]="vehiculo.value">
       {{vehiculo.viewValue}}
     </mat-option>
@@ -11,13 +11,13 @@
 </mat-form-field>
 <br>
 <mat-form-field>
-  <input matInput [matDatepicker]="fDesde" placeholder="Fecha Desde">
+  <input matInput [matDatepicker]="fDesde" placeholder="Fecha Desde" #fDesde >
   <mat-datepicker-toggle matSuffix [for]="fDesde"></mat-datepicker-toggle>
   <mat-datepicker #fDesde></mat-datepicker>
 </mat-form-field>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <mat-form-field>
-  <input matInput [matDatepicker]="fHasta" placeholder="Fecha Hasta">
+  <input matInput [matDatepicker]="fHasta" placeholder="Fecha Hasta" #fHasta >
   <mat-datepicker-toggle matSuffix [for]="fHasta"></mat-datepicker-toggle>
   <mat-datepicker #fHasta></mat-datepicker>
 </mat-form-field>
