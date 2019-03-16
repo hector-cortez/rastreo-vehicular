@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
 import { RouterModule, Router } from '@angular/router';
 
@@ -13,7 +13,10 @@ export interface Vehiculo {
   styleUrls: ['./exceso-velocidad.component.css']
 })
 export class ExcesoVelocidadComponent implements OnInit {
-  
+  @ViewChild('velocidad') velocidad: ElementRef;
+  @ViewChild('fDesde') fDesde: ElementRef;
+  @ViewChild('fHasta') fHasta: ElementRef;
+
   vehiculos: Vehiculo[] = [
     {value: '1', viewValue: '2153-IXU-2153-IXU'},
     {value: '2', viewValue: '2190-GLI-2190-GLI'},
@@ -32,7 +35,7 @@ export class ExcesoVelocidadComponent implements OnInit {
   }
  
   mostrarReporte(): void {
-     this.router.navigate(["exceso-velocidad-reporte"]);
+     this.router.navigate(["exceso-velocidad-reporte", this.velocidad.nativeElement.value, this.fDesde.nativeElement.value, this.fHasta.nativeElement.value]);
   }
 
 }

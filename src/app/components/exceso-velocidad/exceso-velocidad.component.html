@@ -14,19 +14,19 @@
 
 <br>
 <span>Velocidad Mayor o Igual a: </span> &nbsp;&nbsp;&nbsp;&nbsp;
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Km/hora" value="60" type="number" >
+<mat-form-field class="example-full-width" >
+  <input matInput placeholder="Km/hora" value="60" type="number" #velocidad>
 </mat-form-field>
 
 <br>
 <mat-form-field>
-  <input matInput [matDatepicker]="fDesde" placeholder="Fecha Desde">
+  <input matInput [matDatepicker]="fDesde" placeholder="Fecha Desde" #fDesde>
   <mat-datepicker-toggle matSuffix [for]="fDesde"></mat-datepicker-toggle>
   <mat-datepicker #fDesde></mat-datepicker>
 </mat-form-field>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <mat-form-field>
-  <input matInput [matDatepicker]="fHasta" placeholder="Fecha Hasta">
+  <input matInput [matDatepicker]="fHasta" placeholder="Fecha Hasta" #fHasta>
   <mat-datepicker-toggle matSuffix [for]="fHasta"></mat-datepicker-toggle>
   <mat-datepicker #fHasta></mat-datepicker>
 </mat-form-field>

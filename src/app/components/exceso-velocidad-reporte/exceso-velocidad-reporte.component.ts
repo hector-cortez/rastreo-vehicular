@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
+import {Router, ActivatedRoute} from '@angular/router';
 
 export interface ListaVehiculos {
   nro: number;
@@ -33,9 +34,19 @@ export class ExcesoVelocidadReporteComponent implements OnInit {
   displayedColumns: string[] = ['nro', 'placa', 'ultimoRegistro', 'velocidad', 'puntoCercano'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
-  constructor() { }
+  velocidad = '';
+  fDesde = '';
+  fHasta = '';
+
+  constructor(private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.velocidad = params['velocidad'];
+      this.fDesde = params['fdesde'];
+      this.fHasta = params['fhasta'];
+    });
   }
   
   applyFilter(filterValue: string) {
