@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'exceso-velocidad', component: ExcesoVelocidadComponent },
   { path: 'exceso-velocidad-reporte/:velocidad/:fdesde/:fhasta', component: ExcesoVelocidadReporteComponent },
   { path: 'paradas', component: ParadasComponent },
-  { path: 'paradas-reporte', component: ParadasReporteComponent},  
+  { path: 'paradas-reporte/:vehiculo/:minutos/:fdesde', component: ParadasReporteComponent},  
   { path: 'eventos', component: EventosComponent },
   { path: 'eventos-reporte', component: EventosReporteComponent },  
 ];

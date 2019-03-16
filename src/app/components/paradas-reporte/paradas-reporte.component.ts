@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
+import {Router, ActivatedRoute} from '@angular/router';
 
 export interface ListaVehiculos {
   nro: number;
@@ -33,10 +34,22 @@ const ELEMENT_DATA: ListaVehiculos[] = [
 export class ParadasReporteComponent implements OnInit {
   displayedColumns: string[] = ['nro', 'ultimoRegistro', 'calle', 'puntoCercano'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
+  
+  vehiculo = '';
+  minutos = '';
+  fDesde = '';
+  fHasta = '';
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.vehiculo = params['vehiculo'];
+      this.minutos = params['minutos'];
+      this.fDesde = params['fdesde'];
+      this.fHasta = params['fhasta'];
+    });
   }
   
   applyFilter(filterValue: string) {
